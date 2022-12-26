@@ -33,6 +33,9 @@ body {
   background-image: url("../images/image-header-desktop.jpg");
   width: 100%;
   border-radius: 0 10px 10px 0;
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
+  opacity: 0.8;
 }
 
 .purple-text {
@@ -66,7 +69,7 @@ body {
 .stats {
   display: flex;
   margin-top: 1.5em;
-  padding-right: 3em;
+  padding-right: 2em;
 }
 
 .stats-writing {
@@ -76,30 +79,35 @@ body {
   font-size: 2em;
 }
 
+li {
+  list-style: none;
+}
+
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 a:hover {
-    color: aqua;
+  color: aqua;
 }
 
 .credits {
-    margin-top: 3em;
-    font-size: 1.5em;
-    color: white;
+  margin-top: 3em;
+  font-size: 1.5em;
+  color: white;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
   body {
     height: 100vh;
+    padding: 2em;
   }
 
   .container {
     flex-direction: column-reverse;
     max-height: 100vh;
-    margin: 3em 1em;
+    margin-top: 6em;
   }
 
   .content {
